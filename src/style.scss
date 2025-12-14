@@ -1,0 +1,31 @@
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-telex-block-recent-posts-badge {
+	.recent-posts-badge {
+		display: inline-block;
+		background-color: #2271b1;
+		color: #fff;
+		padding: 4px 12px;
+		border-radius: 4px;
+		font-size: 14px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+	}
+
+	.recent-posts-badge-placeholder {
+		padding: 12px;
+		background-color: #f0f0f1;
+		border: 1px dashed #8c8f94;
+		border-radius: 4px;
+		color: #50575e;
+		font-size: 14px;
+		text-align: center;
+	}
+}

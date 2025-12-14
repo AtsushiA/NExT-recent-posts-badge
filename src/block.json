@@ -1,0 +1,50 @@
+
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "telex/block-recent-posts-badge",
+	"version": "0.1.0",
+	"title": "Recent Posts Badge",
+	"category": "widgets",
+	"icon": "bell",
+	"description": "Display a badge when there are recent posts from a specified taxonomy",
+	"example": {},
+	"attributes": {
+		"taxonomy": {
+			"type": "string",
+			"default": "category"
+		},
+		"termId": {
+			"type": "number",
+			"default": 0
+		},
+		"days": {
+			"type": "number",
+			"default": 7
+		},
+		"badgeText": {
+			"type": "string",
+			"default": "New"
+		}
+	},
+	"supports": {
+		"html": false,
+		"color": {
+			"background": true,
+			"text": true
+		},
+		"spacing": {
+			"padding": true,
+			"margin": true
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true
+		}
+	},
+	"textdomain": "recent-posts-badge",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}
