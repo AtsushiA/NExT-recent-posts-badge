@@ -1,10 +1,10 @@
-# Recent Posts Badge
+# NExT Recent Posts Badge
 
 A WordPress block plugin that displays a customizable badge when there are recent posts from a specified taxonomy.
 
 ## Description
 
-Recent Posts Badge allows you to display a "New" or custom badge indicator based on recent posts from a specific taxonomy term (category, tag, or custom taxonomy). Perfect for highlighting new content sections on your WordPress site.
+NExT Recent Posts Badge allows you to display a "New" or custom badge indicator based on recent posts from a specific taxonomy term (category, tag, or custom taxonomy). Perfect for highlighting new content sections on your WordPress site.
 
 ## Features
 
@@ -27,12 +27,12 @@ Recent Posts Badge allows you to display a "New" or custom badge indicator based
 1. Clone or download this repository to your WordPress plugins directory:
    ```bash
    cd wp-content/plugins/
-   git clone [repository-url] recent-posts-badge
+   git clone [repository-url] NExT-recent-posts-badge
    ```
 
 2. Install dependencies:
    ```bash
-   cd recent-posts-badge
+   cd NExT-recent-posts-badge
    npm install
    ```
 
@@ -58,7 +58,7 @@ Recent Posts Badge allows you to display a "New" or custom badge indicator based
 ### Project Structure
 
 ```
-recent-posts-badge/
+NExT-recent-posts-badge/
 ├── build/              # Compiled files (generated)
 ├── src/
 │   ├── block.json      # Block metadata and configuration
@@ -75,7 +75,7 @@ recent-posts-badge/
 
 ## Usage
 
-1. Add the "Recent Posts Badge" block to any post or page
+1. Add the "NExT Recent Posts Badge" block to any post or page
 2. Configure the block settings in the sidebar:
    - **Taxonomy**: Select the taxonomy type (category, tag, or custom)
    - **Term ID**: Specify the taxonomy term ID
@@ -101,7 +101,7 @@ This plugin is licensed under the GPLv2 or later.
 
 ## Author
 
-WordPress Telex
+NExT-Season
 
 ## Changelog
 

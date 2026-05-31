@@ -6,7 +6,7 @@
 $taxonomy = isset( $attributes['taxonomy'] ) ? $attributes['taxonomy'] : 'category';
 $term_id  = isset( $attributes['termId'] ) ? absint( $attributes['termId'] ) : 0;
 $days     = isset( $attributes['days'] ) ? absint( $attributes['days'] ) : 7;
-$badge_text = isset( $attributes['badgeText'] ) ? $attributes['badgeText'] : __( 'New', 'recent-posts-badge' );
+$badge_text = isset( $attributes['badgeText'] ) ? $attributes['badgeText'] : __( 'New', 'next-recent-posts-badge' );
 
 if ( $term_id === 0 ) {
 	return;

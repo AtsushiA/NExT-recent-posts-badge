@@ -84,7 +84,7 @@ export default function Edit( { attributes, setAttributes } ) {
 	}, [ taxonomy, termId, days ] );
 
 	const taxonomyOptions = [
-		{ label: __( 'Select a taxonomy', 'recent-posts-badge' ), value: '' },
+		{ label: __( 'Select a taxonomy', 'next-recent-posts-badge' ), value: '' },
 		...( taxonomies || [] )
 			.filter( ( tax ) => tax.visibility?.publicly_queryable )
 			.map( ( tax ) => ( {
@@ -94,7 +94,7 @@ export default function Edit( { attributes, setAttributes } ) {
 	];
 
 	const termOptions = [
-		{ label: __( 'Select a term', 'recent-posts-badge' ), value: '0' },
+		{ label: __( 'Select a term', 'next-recent-posts-badge' ), value: '0' },
 		...( terms || [] ).map( ( term ) => ( {
 			label: term.name,
 			value: term.id.toString(),
@@ -105,10 +105,10 @@ export default function Edit( { attributes, setAttributes } ) {
 		<>
 			<InspectorControls>
 				<PanelBody
-					title={ __( 'Badge Settings', 'recent-posts-badge' ) }
+					title={ __( 'Badge Settings', 'next-recent-posts-badge' ) }
 				>
 					<SelectControl
-						label={ __( 'Taxonomy', 'recent-posts-badge' ) }
+						label={ __( 'Taxonomy', 'next-recent-posts-badge' ) }
 						value={ taxonomy }
 						options={ taxonomyOptions }
 						onChange={ ( value ) => {
@@ -117,7 +117,7 @@ export default function Edit( { attributes, setAttributes } ) {
 					/>
 					{ taxonomy && (
 						<SelectControl
-							label={ __( 'Term', 'recent-posts-badge' ) }
+							label={ __( 'Term', 'next-recent-posts-badge' ) }
 							value={ termId.toString() }
 							options={ termOptions }
 							onChange={ ( value ) =>
@@ -126,7 +126,7 @@ export default function Edit( { attributes, setAttributes } ) {
 						/>
 					) }
 					<TextControl
-						label={ __( 'Days to check', 'recent-posts-badge' ) }
+						label={ __( 'Days to check', 'next-recent-posts-badge' ) }
 						type="number"
 						value={ days }
 						onChange={ ( value ) =>
@@ -135,7 +135,7 @@ export default function Edit( { attributes, setAttributes } ) {
 						min="1"
 					/>
 					<TextControl
-						label={ __( 'Badge text', 'recent-posts-badge' ) }
+						label={ __( 'Badge text', 'next-recent-posts-badge' ) }
 						value={ badgeText }
 						onChange={ ( value ) =>
 							setAttributes( { badgeText: value } )
@@ -148,7 +148,7 @@ export default function Edit( { attributes, setAttributes } ) {
 					<div className="recent-posts-badge-placeholder">
 						{ __(
 							'Please select a taxonomy and term in the block settings',
-							'recent-posts-badge'
+							'next-recent-posts-badge'
 						) }
 					</div>
 				) : (
@@ -161,7 +161,7 @@ export default function Edit( { attributes, setAttributes } ) {
 							<div className="recent-posts-badge-placeholder">
 								{ __(
 									'No recent posts found (badge will be hidden on frontend)',
-									'recent-posts-badge'
+									'next-recent-posts-badge'
 								) }
 							</div>
 						) }

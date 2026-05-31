@@ -1,16 +1,17 @@
 <?php
 /**
- * Plugin Name:       Recent Posts Badge
+ * Plugin Name:       NExT Recent Posts Badge
  * Description:       Displays a customizable badge when there are recent posts from a specified taxonomy
  * Version:           0.1.0
  * Requires at least: 6.1
  * Requires PHP:      7.4
- * Author:            WordPress Telex
+ * Author:            NExT-Season
+ * Author URI:        https://next-season.net
  * License:           GPLv2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       recent-posts-badge
+ * Text Domain:       next-recent-posts-badge
  *
- * @package Telex
+ * @package NExT
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -24,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function telex_recent_posts_badge_block_init() {
+function next_recent_posts_badge_block_init() {
 	register_block_type( __DIR__ . '/build/' );
 }
-add_action( 'init', 'telex_recent_posts_badge_block_init' );
+add_action( 'init', 'next_recent_posts_badge_block_init' );

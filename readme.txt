@@ -1,7 +1,7 @@
 
-=== Recent Posts Badge ===
+=== NExT Recent Posts Badge ===
 
-Contributors:      WordPress Telex
+Contributors:      NExT-Season
 Tags:              block, badge, posts, taxonomy, recent
 Tested up to:      6.8
 Stable tag:        0.1.0
@@ -12,7 +12,7 @@ A dynamic badge that displays custom text when there are recent posts from a spe
 
 == Description ==
 
-The Recent Posts Badge block allows you to display a customizable badge on your site that only appears when there are posts from a specified taxonomy that are newer than a defined number of days.
+The NExT Recent Posts Badge block allows you to display a customizable badge on your site that only appears when there are posts from a specified taxonomy that are newer than a defined number of days.
 
 Perfect for highlighting new content, recent updates, or fresh posts in specific categories or custom taxonomies. The block gives you full control over:
 
@@ -26,9 +26,9 @@ The block is fully dynamic and will automatically show or hide based on whether 
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/recent-posts-badge` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/NExT-recent-posts-badge` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
-3. Add the "Recent Posts Badge" block to any post or page
+3. Add the "NExT Recent Posts Badge" block to any post or page
 4. Configure the taxonomy, term, days threshold, and badge text in the block settings
 
 == Frequently Asked Questions ==

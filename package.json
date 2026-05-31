@@ -1,8 +1,8 @@
 {
-    "name": "block-recent-posts-badge",
+    "name": "next-recent-posts-badge",
     "version": "0.1.0",
     "description": "Display a badge when there are recent posts from a specified taxonomy",
-    "author": "telex block authoring tool",
+    "author": "NExT-Season",
     "license": "GPL-2.0-or-later",
     "main": "build/index.js",
     "scripts": {

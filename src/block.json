@@ -2,9 +2,9 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "telex/block-recent-posts-badge",
+	"name": "next/recent-posts-badge",
 	"version": "0.1.0",
-	"title": "Recent Posts Badge",
+	"title": "NExT Recent Posts Badge",
 	"category": "widgets",
 	"icon": "bell",
 	"description": "Display a badge when there are recent posts from a specified taxonomy",
@@ -42,7 +42,7 @@
 			"lineHeight": true
 		}
 	},
-	"textdomain": "recent-posts-badge",
+	"textdomain": "next-recent-posts-badge",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",
