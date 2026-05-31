@@ -3,7 +3,9 @@
  * @see https://github.com/WordPress/gutenberg/blob/trunk/docs/reference-guides/block-api/block-metadata.md#render
  */
 
-$taxonomy = isset( $attributes['taxonomy'] ) ? $attributes['taxonomy'] : 'category';
+$taxonomy = isset( $attributes['taxonomy'] ) && taxonomy_exists( $attributes['taxonomy'] )
+	? sanitize_key( $attributes['taxonomy'] )
+	: 'category';
 $term_id  = isset( $attributes['termId'] ) ? absint( $attributes['termId'] ) : 0;
 $days     = isset( $attributes['days'] ) ? absint( $attributes['days'] ) : 7;
 $badge_text = isset( $attributes['badgeText'] ) ? $attributes['badgeText'] : __( 'New', 'next-recent-posts-badge' );
