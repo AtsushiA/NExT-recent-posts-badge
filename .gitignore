@@ -37,3 +37,14 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Dev tooling (wp-env / phpunit / playwright)
+vendor/
+.wp-env.override.json
+debug.log
+db.sql
+.phpunit.result.cache
+test-results/
+playwright-report/
+blob-report/
+tests/e2e/.auth/
